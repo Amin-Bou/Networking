@@ -10,6 +10,7 @@ I made sure the security group of my EC2 instance allowed port 80 (HTTP) so that
 
 I then pointed the public IPv4 address of my EC2 instance to the A record of my domain on Route53.<img width="142" height="58" alt="image" src="https://github.com/user-attachments/assets/8c9ed046-e26c-465a-aae8-1fa99755067c" />
 
-I tested that everything was functional by using the 'sudo systemctl status nginx' command to ensure NGINX was running properly. I then copied and pasted the public IP of my EC2 instance into my browser to find that it was working: <img width="1911" height="300" alt="image" src="https://github.com/user-attachments/assets/88a91d1f-90d3-4fdf-a0e3-d22ce21bc5f5" />
+I tested that everything was functional by using the 'sudo systemctl status nginx' command to ensure NGINX was running properly. I then copied and pasted the domian I bought from Route53 into my browser to find that it was working: <img width="1910" height="398" alt="image" src="https://github.com/user-attachments/assets/4d66bfe3-3934-40ed-88aa-1911b715edf0" />
+
 (I noticed that each time I restarted the instance, I needed to change the value in my A record as the IP kept on changing, next time I should use an IP to avoid this mistake)
 
